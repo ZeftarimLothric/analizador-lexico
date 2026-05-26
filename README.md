@@ -154,7 +154,7 @@ El frontend queda en: http://localhost:5173
 3. Presiona "Analizar Codigo".
 4. Revisa los tabs de Resumen, Tokens y Errores.
 
-## Ejemplo de flujo (para exponer)
+## Ejemplo de flujo 
 1. El usuario escribe codigo en la web.
 2. El frontend envia el texto al backend con POST /api/analyze.
 3. El backend analiza el texto con reglas regex (AFD simulado).
