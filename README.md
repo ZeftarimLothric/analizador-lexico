@@ -4,12 +4,12 @@ Este proyecto es un analizador lexico para el lenguaje MiniLang. Incluye:
 - Frontend web para escribir codigo y ver resultados.
 - Backend con una API REST que analiza el texto y devuelve tokens y errores.
 
-## Resumen muy corto (para exponer)
+## Resumen muy corto
 1. El analizador lexico es la primera fase de un compilador.
 2. Toma texto y lo convierte en tokens (palabras con tipo y linea).
 3. Si hay un caracter invalido, marca un error lexico y se detiene.
 
-## Que hace el analizador (explicacion simple)
+## Que hace el analizador
 Imagina que el programa es una frase. El analizador lexico separa la frase en
 palabras y les pone una etiqueta. Por ejemplo:
 - "int" -> PALABRA_RESERVADA
@@ -124,7 +124,7 @@ Respuesta:
   "errors": []
 }
 
-## Como instalar y ejecutar (Windows / Mac / Linux)
+## Como instalar y ejecutar
 Requisitos:
 - Node.js 18 o superior
 - Git
