@@ -56,7 +56,7 @@ El analizador solo pone esas etiquetas y anota en que linea aparecieron.
 flowchart LR
   A[Texto del programa] --> B[Analizador lexico]
   B --> C[Lista de tokens]
-  B --> D[Error lexico (si aparece)]
+  B --> D[Error lexico si aparece]
 ```
 
 El analizador lee el codigo de izquierda a derecha y va creando tokens.
