@@ -1,0 +1,65 @@
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/jetbrains-mono";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: oklch(0.985 0.004 106.42);
+  --foreground: oklch(0.18 0.015 260.32);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.015 260.32);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.015 260.32);
+  --primary: oklch(0.235 0.02 260.32);
+  --primary-foreground: oklch(0.985 0.004 106.42);
+  --secondary: oklch(0.965 0.006 260.32);
+  --secondary-foreground: oklch(0.235 0.02 260.32);
+  --muted: oklch(0.965 0.006 260.32);
+  --muted-foreground: oklch(0.52 0.015 260.32);
+  --accent: oklch(0.965 0.006 260.32);
+  --accent-foreground: oklch(0.235 0.02 260.32);
+  --destructive: oklch(0.62 0.18 27.3);
+  --border: oklch(0.91 0.01 260.32);
+  --input: oklch(0.91 0.01 260.32);
+  --ring: oklch(0.68 0.02 260.32);
+  --radius: 0.9rem;
+}
+
+.dark {
+  --background: oklch(0.12 0.015 260.32);
+  --foreground: oklch(0.99 0.002 106.42);
+  --card: oklch(0.2 0.015 260.32);
+  --card-foreground: oklch(0.99 0.002 106.42);
+  --popover: oklch(0.2 0.015 260.32);
+  --popover-foreground: oklch(0.99 0.002 106.42);
+  --primary: oklch(0.99 0.002 106.42);
+  --primary-foreground: oklch(0.12 0.015 260.32);
+  --secondary: oklch(0.26 0.015 260.32);
+  --secondary-foreground: oklch(0.99 0.002 106.42);
+  --muted: oklch(0.26 0.015 260.32);
+  --muted-foreground: oklch(0.86 0.008 260.32);
+  --accent: oklch(0.28 0.015 260.32);
+  --accent-foreground: oklch(0.99 0.002 106.42);
+  --destructive: oklch(0.7 0.18 27.3);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.72 0.02 260.32);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    margin: 0;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+}
